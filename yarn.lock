@@ -4474,6 +4474,13 @@
   resolved "https://registry.yarnpkg.com/@one-ini/wasm/-/wasm-0.1.1.tgz#6013659736c9dbfccc96e8a9c2b3de317df39323"
   integrity sha512-XuySG1E38YScSJoMlqovLru4KTUNSjgVTIjyh7qMX6aNN5HY5Ct5LhRJdxO79JtTzKfzV/bnWpz+zquYrISsvw==
 
+"@opentelemetry/api-logs@0.223.0":
+  version "0.223.0"
+  resolved "https://registry.yarnpkg.com/@opentelemetry/api-logs/-/api-logs-0.223.0.tgz#12819b6542fbde1a394a592214b62990a3ad1615"
+  integrity sha512-Oepm6etVPFCn0VWB1t833iOTgz1eYBDUPxcrOR/XvwzD1+Ag9VzSPSrrKAFNJ/haatj+8CXbG47pZXvdNQKDJw==
+  dependencies:
+    "@opentelemetry/api" "^1.3.0"
+
 "@opentelemetry/api-metrics@0.27.0":
   version "0.27.0"
   resolved "https://registry.yarnpkg.com/@opentelemetry/api-metrics/-/api-metrics-0.27.0.tgz#d8eca344ed1155f3ea8a8133ade827b4bb90efbf"
@@ -4486,7 +4493,7 @@
   dependencies:
     "@opentelemetry/api" "^1.0.0"
 
-"@opentelemetry/api@^1.0.0", "@opentelemetry/api@^1.0.1", "@opentelemetry/api@^1.4.0", "@opentelemetry/api@^1.7.0", "@opentelemetry/api@^1.9.0", "@opentelemetry/api@~1.9.0":
+"@opentelemetry/api@^1.0.0", "@opentelemetry/api@^1.0.1", "@opentelemetry/api@^1.3.0", "@opentelemetry/api@^1.4.0", "@opentelemetry/api@^1.7.0", "@opentelemetry/api@^1.9.0", "@opentelemetry/api@~1.9.0":
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/@opentelemetry/api/-/api-1.9.1.tgz#c1b0346de336ba55af2d5a7970882037baedec05"
   integrity sha512-gLyJlPHPZYdAk1JENA9LeHejZe1Ti77/pTeFm/nMXmQH/HFZlcS/O2XJB+L8fkbrNSqhdtlvjBVjxwUYanNH5Q==
@@ -4535,14 +4542,12 @@
     "@opentelemetry/semantic-conventions" "1.28.0"
     jaeger-client "^3.15.0"
 
-"@opentelemetry/instrumentation-dns@^0.31.2":
-  version "0.31.5"
-  resolved "https://registry.yarnpkg.com/@opentelemetry/instrumentation-dns/-/instrumentation-dns-0.31.5.tgz#bea92dface0829b3bde50ef6f5d884b5f991cc1f"
-  integrity sha512-jGMpUzUlPT0mPum2N931Q918cuAfrEJOTHM35O1+YpCfjBnpbj+Vx77pIX0dSdWPxrigiPNZqdxQ2GadfdwBCA==
+"@opentelemetry/instrumentation-dns@^0.66.0":
+  version "0.66.0"
+  resolved "https://registry.yarnpkg.com/@opentelemetry/instrumentation-dns/-/instrumentation-dns-0.66.0.tgz#53ecc5ae5f9ef1236b6b090786483f8a6251ea36"
+  integrity sha512-VHv+AA43h8IcF2p+AdXYC3N6NOCP9irsSJ5AaSEwIBpVMd/Coo3vUw1iqmgnqI+kdSgVSLrKvlXHNpcFNRqQmw==
   dependencies:
-    "@opentelemetry/instrumentation" "^0.40.0"
-    "@opentelemetry/semantic-conventions" "^1.0.0"
-    semver "^7.3.2"
+    "@opentelemetry/instrumentation" "^0.223.0"
 
 "@opentelemetry/instrumentation-express@^0.28.0":
   version "0.28.0"
@@ -4609,6 +4614,15 @@
     require-in-the-middle "^6.0.0"
     semver "^7.3.2"
     shimmer "^1.2.1"
+
+"@opentelemetry/instrumentation@^0.223.0":
+  version "0.223.0"
+  resolved "https://registry.yarnpkg.com/@opentelemetry/instrumentation/-/instrumentation-0.223.0.tgz#b7248c91cfe26d6851dd2334e680a001abc86854"
+  integrity sha512-tttBo88TbwK1zpsH6VeJoxLQopxOjW3cnrP50fsQJRZftkSKDDwjolXXBvow2jy0LKXlNRkDQh0NT6yI/q+BEQ==
+  dependencies:
+    "@opentelemetry/api-logs" "0.223.0"
+    import-in-the-middle "^3.0.0"
+    require-in-the-middle "^8.0.0"
 
 "@opentelemetry/instrumentation@^0.29.2":
   version "0.29.2"
@@ -12216,6 +12230,11 @@ cjs-module-lexer@^1.0.0:
   resolved "https://registry.yarnpkg.com/cjs-module-lexer/-/cjs-module-lexer-1.4.3.tgz#0f79731eb8cfe1ec72acd4066efac9d61991b00d"
   integrity sha512-9z8TZaGM1pfswYeXrUpzPrkx8UnWYdhJclsiYMm6x/w5+nN+8Tf/LnAgfLGQCm59qAOxU8WwHEq2vNwF6i4j+Q==
 
+cjs-module-lexer@^2.2.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/cjs-module-lexer/-/cjs-module-lexer-2.3.0.tgz#4eb71c63d5f70f0b1d8a39a595c134a6692493f2"
+  integrity sha512-lmNyBzi6iYiqyrExTctfmjd8tInx+dHu9PBomTfH5RXS53c27JMFJgzNv5TyAnm3PgGf+MLy0+Ws41/HlVxdKQ==
+
 class-utils@^0.3.5:
   version "0.3.6"
   resolved "https://registry.yarnpkg.com/class-utils/-/class-utils-0.3.6.tgz#f93369ae8b9a7ce02fd41faad0ca83033190c463"
@@ -14595,6 +14614,11 @@ es-module-lexer@^2.1.0:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/es-module-lexer/-/es-module-lexer-2.3.2.tgz#311fa4f40168c1975c505477c51b23234d41ad55"
   integrity sha512-poHGpORABojJJucnV9KbOavETW8lBVnphkW77ER5/BQ5Fz7oXSoCNek7IH3vR5nRjdsEz926ibFYX8KtLQmdyw==
+
+es-module-lexer@^3.0.2:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/es-module-lexer/-/es-module-lexer-3.0.3.tgz#3c4b64e116d69fe523e332134ef088962d78f288"
+  integrity sha512-yWGe1O/j+almnV4hOYrmZo8u58JdnmXEMneRQAYkWtqSiT86yoMIEKF4rpqEDj52tbYl3xceBD3DQIBwcsC9Pw==
 
 es-object-atoms@^1.0.0, es-object-atoms@^1.1.1, es-object-atoms@^1.1.2:
   version "1.1.2"
@@ -17860,6 +17884,15 @@ import-in-the-middle@1.3.5:
   integrity sha512-yzHlBqi1EBFrkieAnSt8eTgO5oLSl+YJ7qaOpUH/PMqQOMZoQ/RmDlwnTLQrwYto+gHYjRG+i/IbsB1eDx32NQ==
   dependencies:
     module-details-from-path "^1.0.3"
+
+import-in-the-middle@^3.0.0:
+  version "3.5.2"
+  resolved "https://registry.yarnpkg.com/import-in-the-middle/-/import-in-the-middle-3.5.2.tgz#c017ecf4fe1f83da743793ea9321519131cd3135"
+  integrity sha512-WseIA/4o56+GYO3RmlOPvejYi771OFeJEeK/ejROsr9bdjW+E5NXTOD1Di8TL40Qgg3JJX9aa97Hf8iiSVIKZw==
+  dependencies:
+    cjs-module-lexer "^2.2.0"
+    es-module-lexer "^3.0.2"
+    module-details-from-path "^1.0.4"
 
 import-local@3.1.0:
   version "3.1.0"
@@ -22239,7 +22272,7 @@ modify-values@^1.0.0, modify-values@^1.0.1:
   resolved "https://registry.yarnpkg.com/modify-values/-/modify-values-1.0.1.tgz#b3939fa605546474e3e3e3c63d64bd43b4ee6022"
   integrity sha512-xV2bxeN6F7oYjZWTe/YPAy6MN2M+sL4u/Rlm2AHCIVGfo2p1yGmBHQ6vHehl4bRTZBdHu3TSkWdYgkwpYzAGSw==
 
-module-details-from-path@^1.0.3:
+module-details-from-path@^1.0.3, module-details-from-path@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/module-details-from-path/-/module-details-from-path-1.0.4.tgz#b662fdcd93f6c83d3f25289da0ce81c8d9685b94"
   integrity sha512-EGWKgxALGMgzvxYF1UyGTy0HXX/2vHLkw6+NvDKW2jypWbHpjQuj4UMcqQWXHERJhVGKikolT06G3bcKe4fi7w==
@@ -26411,6 +26444,14 @@ require-in-the-middle@^7.1.0:
     debug "^4.3.5"
     module-details-from-path "^1.0.3"
     resolve "^1.22.8"
+
+require-in-the-middle@^8.0.0:
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/require-in-the-middle/-/require-in-the-middle-8.0.1.tgz#dbde2587f669398626d56b20c868ab87bf01cce4"
+  integrity sha512-QT7FVMXfWOYFbeRBF6nu+I6tr2Tf3u0q8RIEjNob/heKY/nh7drD/k7eeMFmSQgnTtCzLDcCu/XEnpW2wk4xCQ==
+  dependencies:
+    debug "^4.3.5"
+    module-details-from-path "^1.0.3"
 
 require-main-filename@^2.0.0:
   version "2.0.0"
