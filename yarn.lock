@@ -14111,6 +14111,13 @@ dot-case@^3.0.4:
     no-case "^3.0.4"
     tslib "^2.0.3"
 
+dot-case@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/dot-case/-/dot-case-4.0.0.tgz#155c7ea00b4a78de8d627a955a45c9d134b58286"
+  integrity sha512-HACypfZVLAE6n1Wu/LNwcygP9SzxBJiMKhgoHMVLVKb3Pc6Q0Hl/7xz72W6NStWAm6s18A68k06E2yLN9HorsQ==
+  dependencies:
+    no-case "^4.0.0"
+
 dot-prop@^5.1.0:
   version "5.3.0"
   resolved "https://registry.yarnpkg.com/dot-prop/-/dot-prop-5.3.0.tgz#90ccce708cd9cd82cc4dc8c3ddd9abdd55b20e88"
